@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            background-color: #000000;
+            perspective: 700px;
+            background: radial-gradient(100px at right top,#2424ff,skyblue,#224e99) no-repeat;
+            position: relative;
+            overflow: hidden;
+        }
+        p{
+            width: 100%;
+            text-align: center;
+           font-size: 50px;
+           color: #224e99;
+           font-weight: 900;
+           transform: all 0.5s;
+           transform-style: preserve-3d;
+        }
+        p:hover{
+            text-shadow: 1px 1px 0px #000000, -1px -1px 0px #ffffff;
+        }
+        img{
+            opacity: .5;
+            
+            position: absolute;
+            bottom: -350px;
+            left: 100;
+           
+        }
+        body:hover img{
+            transition: all 4s;
+            transform: translate(1150px,-730px) rotate(30deg) scale(0.2);
+        }
+        .picture{
+            width: 623px;
+            height: 417px;
+            position: absolute;
+            top: 100px;
+            background: 
+                url("img/bg1.png") left top no-repeat,
+                url("img/bg2.png") right top no-repeat,
+                url("img/bg3.png") right bottom no-repeat,
+                url("img/bg4.png") left bottom no-repeat,
+                url("img/jingjing9.jpg") 113px 84px / 363px 257px no-repeat;
+           
+            /* border: 1px solid #000; */
+
+        }
+        em{
+            color: gold;
+            position: absolute;
+            line-height: 100px;
+            width: 300px;
+            right: 50px;
+            top: 0;
+        }
+       
+        i{
+            color: gold;
+            position: absolute;
+            right: 90px;
+            bottom: 320px;
+        }
+   
+        ul{
+            position: absolute;
+            width: 240px;
+            height: 350px;
+            list-style: none;
+             /* margin: 70px auto;    */
+            top: 100px;
+            left: 700px;  
+            padding: 0;
+            transform-origin: bottom;
+            transform-style: preserve-3d;
+            background-color: #ffffff;
+            transition: all 1s;
+            
+            
+            background: url("img/jingjing1.jpg") no-repeat center center/100% 100%;
+        }
+       
+        ul:hover{
+            transform: rotateX(40deg);
+        }
+        li{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border: 3px solid gold;
+            box-sizing: border-box;
+            transform-style: preserve-3d;
+            transform-origin: left;
+            background-color: #ffffff;
+        }
+        li:nth-child(10){
+            background: url("img/jingjing2.jpg") no-repeat center center/100% 100%;
+        }
+        li:nth-child(9){
+            background: url("img/jingjing1.jpg") no-repeat center center/100% 100%;
+        }
+        li:nth-child(8){
+            background: url("img/jingjing3.jpg") no-repeat center center/100% 100%;
+        }
+        li:nth-child(7){
+            background: url("img/jingjing4.jpg") no-repeat center center/100% 100%;
+        }
+        li:nth-child(6){
+            background: url("img/jingjing5.jpg") no-repeat center center/100% 100%;
+        }
+        li:nth-child(5){
+            background: url("img/jingjing6.jpg") no-repeat center center/100% 100%;
+        }
+        li:nth-child(4){
+            background: url("img/jingjing7.jpg") no-repeat center center/100% 100%;
+        }
+        li:nth-child(3){
+            background: url("img/jingjing8.jpg") no-repeat center center/100% 100%;
+        }
+        li:nth-child(2){
+            background: url("img/jingjing9.jpg") no-repeat center center/100% 100%;
+        }
+        li:nth-child(1){
+            background: url("img/jingjing10.jpg") no-repeat center center/100% 100%;
+        }
+       
+        ul:hover li:nth-child(10){
+            transition: all 1s 1s;
+            transform:rotateY(-160deg)
+        }
+        ul:hover li:nth-child(9){
+            transition: all 1s 1s;
+            transform:rotateY(-159.5deg)
+        }
+        ul:hover li:nth-child(8){
+            transition: all 1s 3s;
+            transform:rotateY(-150deg)
+        }
+        ul:hover li:nth-child(7){
+            transition: all 1s 3s;
+            transform:rotateY(-149.5deg)
+        }
+        ul:hover li:nth-child(6){
+            transition: all 1s 5s;
+            transform:rotateY(-140deg)
+        }
+        ul:hover li:nth-child(5){
+            transition: all 1s 5s;
+            transform:rotateY(-139.5deg)
+        }
+        ul:hover li:nth-child(4){
+            transition: all 1s 7s;
+            transform:rotateY(-130deg)
+        }
+        ul:hover li:nth-child(3){
+            transition: all 1s 7s;
+            transform:rotateY(-129.5deg)
+        }
+        ul:hover li:nth-child(2){
+            transition: all 1s 9s;
+            transform:rotateY(-120deg)
+        }
+        ul:hover li:nth-child(1){
+            transition: all 1s 9s;
+            transform:rotateY(-119.5deg)
+        }
+    </style>
+</head>
+<body>
+    <p>I LOVE YOU</p>
+    <div class="picture"></div>
+    <img src="./img/qiu9.png" alt="">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <em>或者清晨，或者黄昏，与一人一衣一静，谈一爱一情一生，无需昭告天下，一眼望穿秋水</em>
+    <i class="name">——尹逸轩</i>
+</body>
+</html>
+<script>    
+
+</script>
